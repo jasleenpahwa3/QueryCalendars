@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.querycalendars.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one_calendar" 
+        android:textSize="45sp"/>
+
+    <Button
+        android:id="@+id/listenEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/readEvents"
+        android:layout_below="@+id/readEvents"
+        android:layout_marginTop="20dp"
+        android:background="#38eeff"
+        android:onClick="listenEvents"
+        android:text="@string/listen_events" />
+
+    <Button
+        android:id="@+id/readEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:background="#38eeff"
+        android:onClick="readEvents"
+        android:text="@string/read_events" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/listenEvents"
+        android:layout_marginTop="97dp"
+		android:scrollbars = "vertical"
+        android:hint="@string/result"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/addEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listenEvents"
+        android:layout_below="@+id/listenEvents"
+        android:layout_marginTop="20dp"
+        android:background="#38eeff"
+        android:onClick="addEvents"
+        android:text="@string/add_events" />
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="33dp"
+        android:contentDescription="@string/speak"
+        android:onClick="speakNow"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+</RelativeLayout>

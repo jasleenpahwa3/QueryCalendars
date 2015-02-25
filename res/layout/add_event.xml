@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<EditText android:id="@+id/event"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_name"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:layout_marginBottom="15dip"/>
+	
+	<EditText android:id="@+id/event_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_location"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:layout_marginBottom="15dip"/>
+
+	<TextView
+	    		android:id="@+id/event_start"
+	    		style="?android:attr/spinnerStyle"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginBottom="15dip"
+	    		android:layout_marginTop="5dip"
+	    		android:onClick="onClickDateTime"
+	    		android:text="@string/event_start" />
+
+	<TextView
+	    		android:id="@+id/event_start_time"
+	    		style="?android:attr/spinnerStyle"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginBottom="15dip"
+	    		android:layout_marginTop="5dip"
+	    		android:layout_gravity="center_vertical|center_horizontal"
+	    		android:onClick="onClickDateTime"
+	    		android:text="@string/event_start_time" />
+   
+    <TextView
+        		android:id="@+id/event_end"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="center_vertical|center_horizontal"
+        		android:layout_marginTop="5dip"
+        		android:text="@string/event_end"
+        		android:onClick="onClickDateTime"
+        		style="?android:attr/spinnerStyle"
+        		android:layout_marginBottom="15dip"/>
+    
+    <TextView
+	    		android:id="@+id/event_end_time"
+	    		style="?android:attr/spinnerStyle"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginBottom="15dip"
+	    		android:layout_marginTop="5dip"
+	    		android:layout_gravity="center_vertical|center_horizontal"
+	    		android:onClick="onClickDateTime"
+	    		android:text="@string/event_end_time" />
+	
+	<EditText android:id="@+id/event_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/event_description"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:layout_marginBottom="15dip"/>
+	
+	<Button
+        		android:id="@+id/createEvent"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="5dp"
+        		android:background="#38eeff"
+        		android:onClick="createEvent"
+        		android:text="@string/create_event" />
+	
+          
+</LinearLayout>

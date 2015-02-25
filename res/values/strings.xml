@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OneCalendar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="read_events">Get all the calendar events</string>
+    <string name="listen_events">Listen to all the calendar events</string>
+    <string name="one_calendar">One Calendar</string>
+    <string name="result">Events</string>
+    <string name="add_events">Add an event to your calendar</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_location">Location</string>
+    <string name="event_description">Description</string>
+    <string name="event_start">From</string>
+    <string name="event_end">To</string>
+    <string name="speak">Speak Now</string>
+    <string name="event_start_time"/>
+    <string name="event_end_time"/>
+    <string name="create_event">Create Event</string>
+
+</resources>
